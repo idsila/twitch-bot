@@ -17,7 +17,7 @@ async function startApp() {
   console.log('БОТ ВКЛЮЧЕН');
   const browser = await chromium.launch({
     headless: true,
-    args: ["--no-sandbox"]
+    args: ["--no-sandbox", "--disable-setuid-sandbox"]
   });
 
   const context = await browser.newContext({ });
