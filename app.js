@@ -1,5 +1,5 @@
 require('dotenv').config({});
-const { chromium } = require('playwright-core');
+const { chromium } = require('playwright');
 const express = require('express');
 const path = require('path');
 const app = express();
