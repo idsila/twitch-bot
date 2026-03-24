@@ -16,7 +16,6 @@ app.use(express.static('public'));
 async function startApp() {
   console.log('БОТ ВКЛЮЧЕН');
   const browser = await chromium.launch({
-    executablePath: '/usr/bin/chromium',
     headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"]
   });
